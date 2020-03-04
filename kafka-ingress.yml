@@ -3,6 +3,11 @@ kind: Ingress
 metadata:
   name: kafka-ingress
 spec:
-  backend:
-    serviceName: kafka
-    servicePort: 9092
+  rules:
+  - host: kafka.vsys.org
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: kafka
+          servicePort: 9092
