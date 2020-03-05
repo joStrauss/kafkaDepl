@@ -10,4 +10,4 @@ spec:
     targetPort: 9092
   selector:
     app: kafka
-  type: NodePort
+  type: LoadBalancer
