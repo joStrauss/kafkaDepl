@@ -4,9 +4,9 @@ metadata:
   name: kafka
 spec:
   ports:
-    port: 80
-  - name: broker 
+    port: 80 
     protocol: TCP
+    name: http
     targetPort: 8080
   selector:
     app: kafka
