@@ -11,4 +11,4 @@ spec:
     name: http
   selector:
     app: kafka
-  type: LoadBalancer
+  type: NodePort
