@@ -4,7 +4,7 @@ metadata:
   name: kafka
 spec:
   ports:
-    port: 80 
+  - port: 80 
     protocol: TCP
     name: http
     targetPort: 8080
